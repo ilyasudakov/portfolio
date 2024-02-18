@@ -66,12 +66,14 @@ header.content-wrapper {
 .header__title {
   font-size: 40px;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .header__subtitle {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .header__links {
@@ -81,6 +83,11 @@ header.content-wrapper {
 
 .header__links > a {
   text-decoration: none;
+}
+
+.timeline__list {
+  display: flex;
+  flex-direction: column;
 }
 
 .timeline__item {
@@ -148,4 +155,41 @@ header.content-wrapper {
 .timeline__content p,
 .timeline__content ul li {
   font-size: 1.1rem;
+}
+
+@media (max-width: 1200px) {
+  .content-wrapper {
+    padding: 0 2rem;
+  }
+
+  .content-wrapper--experience {
+    padding: 0;
+  }
+
+  .content-wrapper--experience h2 {
+    padding-left: 2rem;
+  }
+
+  .content-wrapper--experience .timeline__list {
+    padding-left: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline__item {
+    display: grid;
+    grid-template-columns: 60px 30px 4fr;
+  }
+
+  .timeline__period .timeline__location {
+    display: none;
+  }
+  .timeline__period .timeline__dates {
+    font-size: 0.9rem;
+  }
+
+  .timeline__icon img {
+    width: 35px;
+    height: 35px;
+  }
 }

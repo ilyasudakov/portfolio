@@ -159,15 +159,16 @@ header.content-wrapper {
 
 @media (max-width: 1200px) {
   .content-wrapper {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .content-wrapper--experience {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 1rem;
   }
 
   .content-wrapper--experience h2 {
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
 
   .content-wrapper--experience .timeline__list {

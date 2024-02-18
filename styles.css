@@ -26,9 +26,18 @@ h2 {
   margin-bottom: 1.25rem;
 }
 
-p {
+p,
+ul li {
   color: #818181;
   font-size: 1.5rem;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+ul li {
+  margin-bottom: 0.25rem;
 }
 
 .content-wrapper {
@@ -136,6 +145,7 @@ header.content-wrapper {
   margin-bottom: 0.4rem;
 }
 
-.timeline__content p {
+.timeline__content p,
+.timeline__content ul li {
   font-size: 1.1rem;
 }

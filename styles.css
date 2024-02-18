@@ -193,6 +193,10 @@ header.content-wrapper {
 }
 
 @media (max-width: 768px) {
+  .language_selector {
+    right: 2rem;
+  }
+  
   .timeline__item {
     display: grid;
     grid-template-columns: 60px 30px 4fr;
